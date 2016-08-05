@@ -85,8 +85,10 @@ val result2 = iptime.mapValues(x => {
     if(date > previous+15*60*1000){//15min window limit
       session = session + 1
       duration += (previous - sessionBegin);
-      sessionBegin = date;
+    }else{
+      duration += date - sessionBegin
     }
+    sessionBegin = date;
     previous = date;
   })
   duration/session
@@ -138,8 +140,10 @@ val result4 = iptime.mapValues(x => {
     if(date > previous+15*60*1000){//15min window limit
       session = session + 1
       duration += (previous - sessionBegin);
-      sessionBegin = date;
+    }else{
+      duration += date - sessionBegin
     }
+    sessionBegin = date;
     previous = date;
   })
   duration
