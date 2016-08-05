@@ -8,8 +8,7 @@
 5. execute it then you could get the answers.
 
 #sessionize
-It's an IDEA Project based on SBT and could be runned with enough libs. Moreover there is a unit test file with the project in the src/test/scala.
-There're two core files, please take a look:
+It's an IDEA Project based on SBT and could be runned with enough libs. Moreover there is a unit test file with the project in the src/test/scala.There're two core files, please take a look:
+
 1. src/main/scala/Sessionalize.scala
 2. src/test/scala/SessionalizeTest.scala
-
